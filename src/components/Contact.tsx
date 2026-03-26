@@ -120,12 +120,12 @@ export function Contact() {
               <Clock className="w-6 h-6 text-accent-emerald" />
             </div>
             <h4 className="font-black text-foreground mb-4 text-center">{t('contact.hours')}</h4>
-            <div className={`space-y-2 text-sm text-muted-foreground ${isRTL ? 'text-right' : ''}`}>
-              <div className={`flex ${isRTL ? 'flex-row-reverse' : ''} justify-between`}>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <div className="flex justify-between">
                 <span>{t('contact.businessHours.weekdays')}</span>
                 <span className="font-medium">{t('contact.businessHours.weekdaysTime')}</span>
               </div>
-              <div className={`flex ${isRTL ? 'flex-row-reverse' : ''} justify-between`}>
+              <div className="flex justify-between">
                 <span>{t('contact.businessHours.weekend')}</span>
                 <span className="font-medium">{t('contact.businessHours.weekendTime')}</span>
               </div>
