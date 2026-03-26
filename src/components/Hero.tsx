@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Volume2, VolumeX, Menu, X } from 'lucide-react'
+import { Volume2, VolumeX, Menu, X, Globe } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { LanguageSwitcher } from './LanguageSwitcher'
@@ -175,8 +175,25 @@ export function Hero() {
               <LanguageSwitcher />
             </div>
 
-            {/* Right Side - Video Controls + CTA + Mobile Menu */}
+            {/* Right Side - Video Controls + Language Switcher + CTA + Mobile Menu */}
             <div className="flex items-center space-x-3 relative">
+              {/* Mobile Language Switcher - Only show on mobile */}
+              <div className="md:hidden relative">
+                <button
+                  onClick={() => {
+                    const newLanguage = i18n.language === 'en' ? 'ar' : 'en'
+                    i18n.changeLanguage(newLanguage)
+                    document.documentElement.dir = newLanguage === 'ar' ? 'rtl' : 'ltr'
+                    document.documentElement.lang = newLanguage
+                    document.body.classList.toggle('rtl-mode', newLanguage === 'ar')
+                  }}
+                  className="glass-effect p-3 rounded-full text-white hover:bg-white/20 gentle-animation cursor-pointer"
+                  aria-label="Switch Language"
+                >
+                  <Globe className="w-4 h-4" />
+                </button>
+              </div>
+
               {/* Video Controls with Sound On indicator */}
               <div className="relative">
                 <button
@@ -185,7 +202,7 @@ export function Hero() {
                 >
                   {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
                 </button>
-                
+
                 {/* Sound On indicator - only show when muted */}
                 {isMuted && (
                   <div className="absolute -bottom-10 right-0 flex items-center text-white/80">
