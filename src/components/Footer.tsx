@@ -27,7 +27,7 @@ export function Footer() {
             {/* Company Section */}
             <div className="lg:col-span-2">
               <img
-                src="/noBgColor.png"
+                src="/royah-logo-real.png"
                 alt="Royah Logo"
                 className="w-24 h-24 object-contain mb-6"
               />

@@ -111,9 +111,9 @@ export function Hero() {
         loop
         playsInline
       >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-robotic-arm-working-in-an-automated-factory-4129-large.mp4" type="video/mp4" />
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-futuristic-digital-technology-background-4085-large.mp4" type="video/mp4" />
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-binary-code-background-animation-4020-large.mp4" type="video/mp4" />
+        <source src="https://cdn.coverr.co/videos/coverr-digital-binary-rain-1573/1080p.mp4" type="video/mp4" />
+        <source src="https://cdn.coverr.co/videos/coverr-circuit-board-close-up-1571/1080p.mp4" type="video/mp4" />
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -141,7 +141,7 @@ export function Hero() {
               }}
             >
               <img
-                src="/noBgColor.png"
+                src="/royah-logo-real.png"
                 alt="Royah Logo"
                 className="w-24 h-14 object-contain"
               />
