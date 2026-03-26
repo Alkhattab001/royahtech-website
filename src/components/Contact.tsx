@@ -6,11 +6,13 @@ import { useTranslation } from 'react-i18next'
 export function Contact() {
   const { t, i18n } = useTranslation()
   const isRTL = i18n.language === 'ar'
-  const whatsappNumber = "+96890663136" // Royah's WhatsApp number
-  const whatsappMessage = "Hello! I'm interested in learning more about Royah's digital solutions for my business."
+  const whatsappNumber = "96890663136" // Royah's WhatsApp number
 
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${whatsappNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappMessage = isRTL
+      ? "مرحباً! زرت موقعكم للتو وأنا مهتم بخدماتكم. هل يمكنكم مساعدتي؟"
+      : "Hi! I just visited your website and I'm interested in your services. Can you help me?"
+    const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`
     window.open(url, '_blank')
   }
 
