@@ -111,8 +111,9 @@ export function Hero() {
         loop
         playsInline
       >
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-robotic-arm-working-in-an-automated-factory-4129-large.mp4" type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-futuristic-digital-technology-background-4085-large.mp4" type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-binary-code-background-animation-4020-large.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
