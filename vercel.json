@@ -1,30 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://www.royah.om",
-      "permanent": true,
-      "host": "royahtech.com"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://www.royah.om/$1",
-      "permanent": true,
-      "host": "royahtech.com"
-    },
-    {
-      "source": "/",
-      "destination": "https://www.royah.om",
-      "permanent": true,
-      "host": "www.royahtech.com"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://www.royah.om/$1",
-      "permanent": true,
-      "host": "www.royahtech.com"
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
