@@ -271,28 +271,30 @@ export function About() {
 
         {/* Process Controls */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-6 bg-card/80 backdrop-blur-sm clean-border rounded-2xl px-8 py-4 subtle-shadow">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-6 bg-card/80 backdrop-blur-sm clean-border rounded-2xl px-6 sm:px-8 py-4 subtle-shadow max-w-full">
 
             {/* Methodology Indicator */}
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-accent-emerald rounded-full animate-pulse" />
-              <span className="text-sm font-semibold text-foreground">{t('process.controls.methodology')}</span>
+              <span className="text-xs sm:text-sm font-semibold text-foreground whitespace-nowrap">{t('process.controls.methodology')}</span>
             </div>
 
-            <div className="w-px h-6 bg-border" />
+            <div className="hidden sm:block w-px h-6 bg-border" />
+            <div className="sm:hidden w-6 h-px bg-border" />
 
             {/* Timeline */}
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-accent-blue rounded-full animate-pulse" style={{animationDelay: '0.5s'}} />
-              <span className="text-sm font-semibold text-foreground">{t('process.controls.timeline')}</span>
+              <span className="text-xs sm:text-sm font-semibold text-foreground whitespace-nowrap">{t('process.controls.timeline')}</span>
             </div>
 
-            <div className="w-px h-6 bg-border" />
+            <div className="hidden sm:block w-px h-6 bg-border" />
+            <div className="sm:hidden w-6 h-px bg-border" />
 
             {/* Quality */}
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-accent-purple rounded-full animate-pulse" style={{animationDelay: '1s'}} />
-              <span className="text-sm font-semibold text-foreground">{t('process.controls.quality')}</span>
+              <span className="text-xs sm:text-sm font-semibold text-foreground whitespace-nowrap">{t('process.controls.quality')}</span>
             </div>
           </div>
         </div>
